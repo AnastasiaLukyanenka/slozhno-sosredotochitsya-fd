@@ -2,6 +2,8 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
 .page {
+  margin: 0;
+  padding: 0;
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
@@ -11,10 +13,6 @@
   padding-right: var(--xxs);
   font-size: var(--font-size);
   font-family: 'IBM Plex Mono', 'Bitstream Vera Sans Mono', monospace;
-}
-
-body {
-  margin: 0;
 }
 
  .header {

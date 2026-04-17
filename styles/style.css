@@ -2,6 +2,8 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
 .page {
+  margin: 0;
+  padding: 0;
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
@@ -334,7 +336,6 @@ font-weight: var(--font-weight-normal);
 
   .image-tape {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
     grid-row: span 2;
   }
 

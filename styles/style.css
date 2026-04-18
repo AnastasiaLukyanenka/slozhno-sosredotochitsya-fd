@@ -1,18 +1,21 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
-.page {
-  margin: 0;
-  padding: 0;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  padding-left: var(--xxs);
-  padding-right: var(--xxs);
   font-size: var(--font-size);
   font-family: 'IBM Plex Mono', 'Bitstream Vera Sans Mono', monospace;
+  margin-left: var(--xxs);
+  margin-right: var(--xxs);
 }
 
  .header {
@@ -230,8 +233,8 @@ font-weight: var(--font-weight-normal);
   }
 
   .page {
-  padding-left: var(--xs);
-  padding-right: var(--xs);
+    margin-left: var(--xs);
+    margin-right: var(--xs);
   }
 
   .header {

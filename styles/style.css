@@ -39,7 +39,6 @@
  .header__theme-menu-list {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  width: var(--xl);
   gap: var(--menu-gap);
 }
 
@@ -49,20 +48,25 @@
   text-transform: lowercase;
   background-color: transparent;
   border: none;
-  width: 100%;
+  width: var(--xl);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+  border: 1px solid var(--accent-color);
+}
+
+:focus {
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   text-decoration: underline;
+  text-underline-offset: 5px;
   text-decoration-color: var(--accent-color);
 }
 
@@ -74,7 +78,7 @@
   color: var(--accent-color);
   align-self: flex-start;
   justify-self: flex-end;
-  margin-right: 28px;
+  margin-right: 38px;
   margin-top: var(--xxs);
 }
 
@@ -102,6 +106,7 @@
   top: 0;
   right: 0;
   margin-top: var(--xxs);
+  margin-right: var(--xxs);
   width: var(--corner-size);
   height: var(--corner-size);
   border-top: 1px solid var(--corner-color);
@@ -120,6 +125,7 @@
   bottom: 0;
   left: 0;
   margin-bottom: var(--xxs);
+  margin-left: var(--xxs);
   border-bottom: 1px solid var(--corner-color);
   border-left: 1px solid var(--corner-color);
   border-right: 1px solid transparent;
@@ -247,20 +253,23 @@ font-weight: var(--font-weight-normal);
   }
 
   .header-title {
-    width: calc(100vw/2 - var(--xs));
+    width: 364px;
     justify-self: flex-end;
   }
 
   .REC-decoration {
     margin-top: var(--xs);
+    margin-right: 48px;
   }
 
   .corner::before {
     margin-top: var(--xs);
+    margin-right: var(--xs);
   }
 
   .corner::after {
     margin-bottom: var(--xs);
+    margin-left: var(--xs);
   }
 
   .section {
@@ -356,6 +365,7 @@ font-weight: var(--font-weight-normal);
 
   .footer {
     min-height: var(--tablet-min-height);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -372,11 +382,14 @@ font-weight: var(--font-weight-normal);
 
   .header__theme-menu-list {
     grid-template-columns: repeat(3, 1fr);
-    width: 230px;
   }
 
   .header {
     min-height: var(--desktop-min-height);
+  }
+
+  .header-title {
+    width: 491px;
   }
 
   .section-why {
@@ -395,7 +408,6 @@ font-weight: var(--font-weight-normal);
   }
 
   .footer {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     min-height: var(--desktop-min-height);
   }
 }

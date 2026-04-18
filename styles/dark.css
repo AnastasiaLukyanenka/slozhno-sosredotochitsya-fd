@@ -17,4 +17,7 @@
   --title-color: #DB00FF;
   --title-decor-color: #000028;
   --text-color: #F1B2CE;
+  .REC-decoration {
+    display: block;
+  }
 }

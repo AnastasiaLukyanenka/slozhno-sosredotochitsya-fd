@@ -14,8 +14,11 @@
   background-color: var(--bg-color);
   font-size: var(--font-size);
   font-family: 'IBM Plex Mono', 'Bitstream Vera Sans Mono', monospace;
-  margin-left: var(--xxs);
-  margin-right: var(--xxs);
+}
+
+.header, .main, .footer {
+  padding-left: var(--xxs);
+  padding-left: var(--xxs);  
 }
 
  .header {
@@ -232,9 +235,9 @@ font-weight: var(--font-weight-normal);
     margin-left: -40px;
   }
 
-  .page {
-    margin-left: var(--xs);
-    margin-right: var(--xs);
+  .header, .main, .footer {
+    padding-left: var(--xs);
+    padding-right: var(--xs);
   }
 
   .header {

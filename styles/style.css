@@ -18,7 +18,7 @@
 
 .header, .main, .footer {
   padding-left: var(--xxs);
-  padding-left: var(--xxs);  
+  padding-right: var(--xxs);
 }
 
  .header {

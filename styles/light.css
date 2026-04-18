@@ -15,29 +15,29 @@
   --corner-color: #353430;
   --shadow-color: #FF8DCB;
   --accent-color: #FF8DCB;
-  --text-shadow: #FF8DCB;
   --text-color: #353430;
   --title-decor-color: #353430;
+}
 
-  .REC-decoration {
+:root.theme-light .REC-decoration {
   display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  .REC-decoration {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
   --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #FFC2E6;
   --title-color: #FFC2E6;
   --corner-color: #353430;
   --shadow-color: #FF8DCB;
   --accent-color: #FF8DCB;
-  --text-shadow: #FF8DCB;
   --text-color: #353430;
   --title-decor-color: #353430;
-  
-   .REC-decoration {
-  display: none;
-}
-
   }
 }

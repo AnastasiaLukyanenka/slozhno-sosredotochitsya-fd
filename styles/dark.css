@@ -12,11 +12,16 @@
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --accent-color: #FF0070;
+  --section-title-color: #FF0070;
   --shadow-color: #FF0070;
   --corner-color: #FF0070;
   --title-color: #DB00FF;
   --title-decor-color: #000028;
+  --focus-visible-border: #FF0070;
+  --button-color: #FF0070;
   --text-color: #F1B2CE;
+  --hover-effect-color: rgba(255, 0, 112, 0.4);
+
   .REC-decoration {
     display: block;
   }
